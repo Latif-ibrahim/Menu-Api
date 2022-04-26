@@ -13,7 +13,7 @@ const app = express()
 app.use(express.json())
 app.use(morgan("dev"))
 app.use("/api", foodRoute)
-app.use("/api", userRouter)
+app.use("/api/users", userRouter)
 
 
 const PORT = process.env.PORT||9000
